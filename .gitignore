@@ -16,3 +16,5 @@ old_code/
 Data/
 **/__pycache__/
 **/.venv/
+ElectronJS/easySpiderEnv/
+ExecuteStage/easySpiderEnv/

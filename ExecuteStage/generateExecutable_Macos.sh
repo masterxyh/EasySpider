@@ -12,6 +12,6 @@ echo "With ddddocr and pandas"
 # # 打包带ddddocr和pandas的版本
 rm -r build
 rm -r dist
-pyinstaller -F --icon=favicon.ico  --add-data "/Users/naibo/anaconda3/lib/python3.11/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so:onnxruntime/capi"  --add-data "/Users/naibo/anaconda3/lib/python3.11/site-packages/ddddocr/common_old.onnx:ddddocr" easyspider_executestage.py
+pyinstaller -F --icon=favicon.ico  --add-data "./easySpiderEnv/lib/python3.10/site-packages/onnxruntime/capi/onnxruntime_pybind11_state.so:onnxruntime/capi"  --add-data "./easySpiderEnv/lib/python3.10/site-packages/ddddocr/common_old.onnx:ddddocr" easyspider_executestage.py
 rm ../.temp_to_pub/EasySpider_MacOS/easyspider_executestage_full
 cp dist/easyspider_executestage ../.temp_to_pub/EasySpider_MacOS/easyspider_executestage_full

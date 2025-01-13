@@ -5,7 +5,7 @@
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c -w",
-        "crx": "crx3",
+        "crx": "crx3 --key=./easyspider.pem --crx=output.crx --zip=output.zip",
         "package": "node package.js"
     },
     "license": "AGPL-3.0",
